@@ -1,0 +1,26 @@
+<div class="searchForm" [formGroup]="myForm">
+
+  <div>
+    <label>Nom</label>
+    <input formControlName="lastName">
+  </div>
+  <div>
+    <label>Prénom</label>
+    <input formControlName="firstName">
+  </div>
+  <div>
+    <label>Age min</label>
+    <input formControlName="minAge">
+  </div>
+  <div>
+    <label>Age max</label>
+    <input formControlName="maxAge">
+  </div>
+
+</div>
+
+
+<div style="margin-left: 600px; margin-top: 50px;">
+  <button (click)="searchPersonByCriteria()">Rechercher</button>
+  <button (click)="resetForm()">Reinitialiser</button>
+</div>
